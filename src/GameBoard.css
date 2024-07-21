@@ -43,8 +43,9 @@
 
     .score-header {
         margin: 1rem 0;
-        margin-left: calc(25% + 1em);
+        margin-left: calc(25% + 2rem);
         font-size: 20px;
+        /* text-align: center; */
     }
 
     .title,
@@ -99,7 +100,7 @@
         line-height: 1.5;
 
         .score-header {
-            font-size: 9px;
+            font-size: 8px;
         }
     }
 
