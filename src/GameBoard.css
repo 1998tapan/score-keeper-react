@@ -1,0 +1,107 @@
+.GameBoard {
+    width: 100%;
+    max-width: 900px;
+    background: #023047;
+    border-radius: 10px;
+    border: 3px solid #fff;
+    margin-top: 1rem;
+    padding: 0 2rem 1rem;
+    box-sizing: border-box;
+
+    h1 {
+        margin-bottom: 0;
+        margin: 1rem auto 0;
+    }
+
+    h2 {
+        margin-top: 0;
+    }
+
+    .bold {
+        font-weight: 600;
+    }
+
+    .d-flex {
+        display: flex;
+    }
+
+    .justify-between {
+        justify-content: space-between;
+    }
+
+    .gap {
+        gap: 2rem;
+    }
+
+    .versus {
+        width: 25%;
+        justify-content: center;
+        margin: 1rem 0;
+        font-size: 25px;
+        box-sizing: border-box;
+    }
+
+    .score-header {
+        margin: 1rem 0;
+        margin-left: calc(25% + 1em);
+        font-size: 20px;
+    }
+
+    .title,
+    .stats {
+        flex-grow: 1;
+        flex-basis: 15%;
+    }
+
+    .player-title,
+    .player-name {
+        flex-grow: 2;
+        flex-basis: 30%;
+        text-align: left;
+    }
+
+    .team-logo {
+        flex-basis: 25%;
+        background: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    .team-score-board {
+        flex-grow: 1;
+    }
+
+    .logo-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .player {
+        margin: 0.5rem 0;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 1rem 0.5rem;
+    }
+
+    .team-one-dash .player {
+        background-color: #023e8a;
+    }
+
+    .team-two-dash .player {
+        background-color: #e63946;
+    }
+}
+
+@media(max-width: 768px) {
+    .GameBoard {
+        font-size: 10px;
+        line-height: 1.5;
+
+        .score-header {
+            font-size: 9px;
+        }
+    }
+
+
+}
