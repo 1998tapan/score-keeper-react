@@ -96,8 +96,8 @@
 
 @media(max-width: 768px) {
     .GameBoard {
-        max-width: 100%;
-        width: 100vw;
+        /* max-width: 100%;
+        width: 100vw; */
         font-size: 10px;
         line-height: 1.5;
 
