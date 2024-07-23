@@ -45,7 +45,6 @@
         margin: 1rem 0;
         margin-left: calc(25% + 2rem);
         font-size: 20px;
-        /* text-align: center; */
     }
 
     .title,
@@ -112,6 +111,11 @@
 
         .score-header {
             font-size: 8px;
+            margin-left: calc(25% + 1rem);
+        }
+
+        .gap {
+            gap: 1rem;
         }
     }
 
