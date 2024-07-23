@@ -102,6 +102,7 @@
     .GameBoard {
         /* max-width: 100%;
         width: 100vw; */
+        height: 100vh;
         font-size: 10px;
         line-height: 1.5;
         border-radius: 0;
