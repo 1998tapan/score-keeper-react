@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Arena from "./Arena";
 import "./GameBoard.css";
 import Header from "./Header";
@@ -6,8 +7,7 @@ import TeamDashboard from "./TeamDashBoard";
 
 
 export default function GameBoard({ startGame }) {
-    console.log(startGame);
-    console.dir(startGame);
+    const [scores, setScores] = useState(startGame);
     return (
         <div className="GameBoard">
             <Header />
@@ -15,12 +15,11 @@ export default function GameBoard({ startGame }) {
                 <Arena />
                 <hr />
                 <ScoreHeader />
-                <TeamDashboard className="team-one-dash" team={startGame.teamOne} />
+                <TeamDashboard className="team-one-dash" isTeam="teamOne" team={scores.teamOne} scores={scores} update={setScores} />
 
-                <div className="versus bold d-flex">
-                    vs
-                </div>
-                <TeamDashboard className="team-two-dash" team={startGame.teamTwo} />
+                <div className="versus bold d-flex">vs</div>
+
+                <TeamDashboard className="team-two-dash" isTeam="teamTwo" team={scores.teamTwo} scores={scores} update={setScores} />
             </section>
         </div >
     );

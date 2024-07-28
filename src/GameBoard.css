@@ -1,15 +1,14 @@
 .GameBoard {
     width: 100%;
-    max-width: 900px;
+    /* max-width: 900px; */
     background: #023047;
-    border-radius: 10px;
-    border: 3px solid #fff;
-    padding: 0 2rem 1rem;
+    /* border-radius: 10px; */
+    /* border: 3px solid #fff; */
+    padding: 1rem 2rem;
     box-sizing: border-box;
 
     h1 {
-        margin-bottom: 0;
-        margin: 1rem auto 0;
+        margin: 0;
     }
 
     h2 {
@@ -28,8 +27,24 @@
         justify-content: space-between;
     }
 
+    .justify-center {
+        justify-content: center;
+    }
+
+    .align-center {
+        align-items: center;
+    }
+
     .gap {
         gap: 2rem;
+    }
+
+    .gap-sm {
+        gap: 0.5rem
+    }
+
+    .ms-3 {
+        margin-left: 3em
     }
 
     .versus {
@@ -57,6 +72,7 @@
         flex-grow: 2;
         flex-basis: 30%;
         text-align: left;
+        /* max-width: 35%; */
     }
 
     .team-logo {
