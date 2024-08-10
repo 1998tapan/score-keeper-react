@@ -1,7 +1,7 @@
 import Button from "./Button";
 import { incrementGoals, decrementGoals, incrementAssists, decrementAssists } from "./utils";
 
-export default function Player({ player, scores, update, utils, idx, team }) {
+export default function Player({ player, scores, update, idx, team }) {
     return (
         <div className="player d-flex justify-between align-center bold">
             <div className="stats player-name">{player.name}</div>

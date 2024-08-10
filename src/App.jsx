@@ -9,6 +9,7 @@ const startGame = {
     players: [
       {
         id: 1,
+        team:"teamOne",
         name: "Tapan D.",
         goals: 1,
         assists: 3,
